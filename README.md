@@ -1,4 +1,4 @@
-# TodoList demo using Unchained and Preact.
+# TodoList demo using [Unchained](https://github.com/edoardocavazza/unchained) and Preact.
 
 ## Install the dependencies
 

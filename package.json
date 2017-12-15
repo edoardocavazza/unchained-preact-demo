@@ -5,6 +5,6 @@
   "license": "MIT",
   "dependencies": {
     "preact": "^8.2.7",
-    "unchained-js": "^0.1.0"
+    "unchained-js": "^0.2.0"
   }
 }

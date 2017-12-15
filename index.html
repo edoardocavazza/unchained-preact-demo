@@ -10,22 +10,11 @@
     <script src="node_modules/unchained-js/dist/unchained.client.js"></script>
     <script>
         // register a Service Worker.
-        UnchainedClient.register('sw.js', { scope: '/' }, {
-            // Unchained configuration.
-            plugins: [
-                ['babel', {
-                    plugins: [
-                        'syntax-class-properties',
-                        'proposal-class-properties',
-                        ['transform-react-jsx', { pragma: 'h' }]
-                    ]
-                }],
-                'resolve',
-            ],
-        }).then(() =>
-            // The Service Worker is ready, we can now import the main file.
-            UnchainedClient.import('index.js')
-        );
+        UnchainedClient.register('sw.js', { scope: '/' })
+            .then(() =>
+                // The Service Worker is ready, we can now import the main file.
+                UnchainedClient.import('index.js')
+            );
     </script>
 </body>
 </html>
